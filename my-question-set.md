@@ -1,11 +1,11 @@
 Question Setter
 ---------------
-Name:  __Mustaq Mujahid Mim__         
-Registration # __2019331024__            
+Name:  __Sadik Al Barid__         
+Registration # __2019331046__            
 Session: *2019-2020*            
-GitHub Username: *mmim24*               
-Cell: *01755945867*              
-Email: *mustaq24@student.sust.edu*         
+GitHub Username: *Tard1grad3*               
+Cell: *01797613318*              
+Email: *sadik46@student.sust.edu*         
 
 Question Set with Answers
 =========================
