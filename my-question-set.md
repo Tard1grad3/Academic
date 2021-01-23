@@ -305,7 +305,7 @@ int main()
     return 0;
 }
 ```
-*Output:* Any garbage value. Because **(- -n)** is decrementing the address. So, the output can be any garbage value.
+*Output:* Any garbage value. Because **(--n)** is decrementing the address. So, the output can be any garbage value.
 
 
 <div align="left">3. Answer the following Questions. (Any <b>Two</b>).</div>
@@ -627,7 +627,7 @@ int main()
     return 0;
 }
 ```
-**Answer:** The code has no header file included for standard output. Again, **m = sust- -** will produce error. It needs to be written like **m = sust - 1**. The correct code:
+**Answer:** The code has no header file included for standard output. Again, **m = sust--** will produce error. It needs to be written like **m = sust - 1**. The correct code:
 ```cpp
 #include <stdio.h>
 #define sust 20 * 5 + 100
