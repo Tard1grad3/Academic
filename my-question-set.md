@@ -473,16 +473,16 @@ printf ("%i|%i", i, j);
 
 (a) What will be the output for the following two C programs?
 ```cpp
-i) int main ()                                    ii) int main ()
-   {					                                        {
-   struct one {				                                struct two {
-   int a: 8;				                                  int a: 3;
-   int b: 9;				                                  int b: 7;
-   int c: 6;				                                  int c: 5;
-   int d: 1;				                                  int d: 6;
-   } field1;			       	                            } field2 = { 2, 3, 4, 5 }
-   printf("%d", sizeof(field1));		                  printf("%d", sizeof(field2));
-   }					                                        }
+i) int main ()                                                     ii) int main ()
+   {					                               {
+   struct one {				                               struct two {
+   int a: 8;				                               int a: 3;
+   int b: 9;				                               int b: 7;
+   int c: 6;				                               int c: 5;
+   int d: 1;				                               int d: 6;
+   } field1;			       	                               } field2 = { 2, 3, 4, 5 }
+   printf("%d", sizeof(field1));		                       printf("%d", sizeof(field2));
+   }					                               }
 ```
 **Answer:** <br>
 i) Sum of the bits assigned is, 8+9+6+1 = 24. 1 byte = 8 bits. So, the output will be: 3. <br>
