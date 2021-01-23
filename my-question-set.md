@@ -75,7 +75,7 @@ Output: 30
 
 (e) Look at the pseudo-code written below:
 ```cpp
-	int mom = 42, wow = mom & (1 << 1);
+  int mom = 42, wow = mom & (1 << 1);
   wow? printf ("My MOM is WOW"):
        printf ("My MOM is still WOW");
 ```
