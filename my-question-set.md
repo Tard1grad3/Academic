@@ -275,6 +275,39 @@ int main(void)
 }
 ```
 
+(f) Look at the code given below. Is there any mistake which will cause compilation error? If yes, then correct it and print the output.
+```cpp
+#include <stdio.h>
+#define sust 20 * 5 + 100
+
+int main()
+{
+    int *n, m = 10;
+    int m += sust;
+    n = &sust;
+    printf ("%d", * (--n) *m);
+    return 0;
+}
+
+```
+
+**Answer:** Here **int m += sust** will produce error because m was already declared in the previous line. Again, **n = &sust** will cause a compilation error. First, the value of sust needs to be stored in another variable then it can be assigned to n. The corrected code:
+```cpp
+#include <stdio.h>
+#define sust 20 * 5 + 100
+
+int main()
+{
+    int *n, m = 10, a = sust;
+    m += sust;
+    n = &a;
+    printf ("%d", * (--n) *m);
+    return 0;
+}
+```
+*Output:* Any garbage value. Because **(- -n)** is decrementing the address. So, the output can be any garbage value.
+
+
 <div align="left">3. Answer the following Questions. (Any <b>Two</b>).</div>
 <div align="right">2 &times; 10 = 20 </div>
 
@@ -581,6 +614,32 @@ int main()
     f (i, 0, sz) printf ("%d ", a[i]);
 }
 ```
+
+(f) Look at the code given below. Is there any mistake which will cause compilation error? If yes, then correct it and print the output.
+```cpp
+#include <string.h>
+#define sust 20 * 5 + 100
+
+int main()
+{
+    int n = (sust * 4) / 2, m = sust--;
+    printf ("%d", n-- * m);
+    return 0;
+}
+```
+**Answer:** The code has no header file included for standard output. Again, **m = sust- -** will produce error. It needs to be written like **m = sust - 1**. The correct code:
+```cpp
+#include <stdio.h>
+#define sust 20 * 5 + 100
+
+int main()
+{
+    int n = (sust * 4) / 2, m = sust - 1;
+    printf ("%d", n-- * m);
+    return 0;
+}
+```
+*Output:* `49750`
 
 <div align="left">3. Answer the following Questions. (Any <b>Two</b>).</div>
 <div align="right">2 &times; 10 = 20 </div>
