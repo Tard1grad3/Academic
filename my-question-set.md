@@ -627,7 +627,7 @@ int main()
     return 0;
 }
 ```
-**Answer:** The code has no header file included for standard output. Again, **m = sust--** will produce error. It needs to be written like **m = sust - 1**. The correct code:
+**Answer:** The code has no header file included for standard output. Again, **m = sust--** will produce error. It needs to be written like **m = sust - 1**. The corrected code:
 ```cpp
 #include <stdio.h>
 #define sust 20 * 5 + 100
